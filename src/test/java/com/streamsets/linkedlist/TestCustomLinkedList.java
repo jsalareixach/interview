@@ -10,11 +10,11 @@ import org.junit.jupiter.api.Test;
 
 class TestCustomLinkedList {
 
-  CustomLinkedListSolution<Integer> customList;
+  CustomLinkedList<Integer> customList;
 
   @BeforeEach
   void setUp() {
-    customList = new CustomLinkedListSolution<>();
+    customList = new CustomLinkedList<>();
   }
 
   @Test
