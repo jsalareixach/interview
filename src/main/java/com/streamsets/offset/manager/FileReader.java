@@ -10,6 +10,12 @@ public class FileReader {
     this.fileUtils = fileUtils;
   }
 
+  /**
+   * Reads a file, updates the fileOffset accordingly, and returns the number of positions the pointer advanced
+   * - If the pointer has advanced (new pointer > initial pointer) then update the status to UPDATED/FINISHED
+   *
+   * @return the number of positions advanced
+   */
   public int read() {
     // initial offset
     fileOffset = new FileOffset();
