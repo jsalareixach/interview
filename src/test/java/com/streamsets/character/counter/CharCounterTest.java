@@ -21,21 +21,14 @@ public class CharCounterTest {
   @Test
   public void testSimpleString() {
     String simpleString = "A test string for the interview";
-    assertEquals(5, charCounter.countCharOccurences(simpleString, 't'));
-  }
-
-  @Test
-  public void testNoOccurences() {
-    String simpleString = "A test string for the interview";
-    assertEquals(0, charCounter.countCharOccurences(simpleString, 'z'));
+    assertEquals(5, charCounter.getCharOccurences(simpleString, 't'));
   }
 
   @Test
   public void testMultipleQueries() {
     String simpleString = "A test string for the interview";
-    assertEquals(5, charCounter.countCharOccurences(simpleString, 't'));
-    assertEquals(0, charCounter.countCharOccurences(simpleString, 'z'));
-    assertEquals(2, charCounter.countCharOccurences(simpleString, 's'));
-    assertEquals(1, charCounter.countCharOccurences(simpleString, 'w'));
+    assertEquals(5, charCounter.getCharOccurences(simpleString, 't'));
+    assertEquals(2, charCounter.getCharOccurences(simpleString, 's'));
+    assertEquals(1, charCounter.getCharOccurences(simpleString, 'w'));
   }
 }
