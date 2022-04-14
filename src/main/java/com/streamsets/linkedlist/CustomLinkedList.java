@@ -8,12 +8,38 @@ public class CustomLinkedList<T> implements List<T> {
 
   private Node<T> firstElement;
   private Node<T> lastElement;
-  private int size;
 
   public CustomLinkedList() {
     firstElement = null;
     lastElement = null;
-    size = 0;
+  }
+
+  @Override
+  public T get(int index) {
+    // TODO
+    return null;
+  }
+
+  @Override
+  public void add(T value) {
+    // TODO
+  }
+
+  @Override
+  public void add(int index, T value) {
+    // TODO
+  }
+
+  @Override
+  public T set(int index, T value) {
+    // TODO
+    return null;
+  }
+
+  @Override
+  public T remove(int index) {
+    // TODO
+    return null;
   }
 
   @Override
@@ -31,33 +57,5 @@ public class CustomLinkedList<T> implements List<T> {
   @Override
   public void clear() {
     // TODO
-  }
-
-  @Override
-  public void add(T value) {
-    // TODO
-  }
-
-  @Override
-  public T remove(int index) {
-    // TODO
-    return null;
-  }
-
-  @Override
-  public T get(int index) {
-    // TODO
-    return null;
-  }
-
-  @Override
-  public void add(int index, T value) {
-    // TODO
-  }
-
-  @Override
-  public T set(int index, T value) {
-    // TODO
-    return null;
   }
 }
